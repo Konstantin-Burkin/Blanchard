@@ -1,0 +1,286 @@
+.hero {
+  max-width: 1920px;
+  margin-top: -67px;
+margin: 0 auto;
+}
+
+.hero__container {
+  padding-left: 160px;
+}
+
+.hero__content {
+  align-items: flex-start;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.hero__heading {
+  margin-bottom: -3px;
+  margin: 0 auto;
+  max-width: 600px;
+  font-size: 72px;
+  font-weight: 700;
+  line-height: 98px;
+  color: #fff;
+}
+
+.hero__text {
+  margin-top: 0;
+  margin-bottom: 92px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  color: #fff;
+}
+
+.hero__btn {
+  padding: 22.5px 35px;
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  color: #fff;
+  text-align: center;
+  background-color: #9d5cd0;
+  transition: background-color .3s;
+}
+
+.hero__btn:focus-visible {
+  outline: 3px solid #d1a9f0;
+}
+
+.hero__btn:hover:not(:active) {
+  outline: 2px solid #c283f3;
+  outline-offset: 5px;
+}
+
+.hero__btn:active {
+  outline: 3px solid #d1a9f0;
+  background-color: #7943a4;
+}
+
+.emerge {
+  opacity: 0;
+}
+
+.hero__bg {
+  padding: 134px 0 122px 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/castle1920.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  animation: heroSlides 20s linear infinite;
+}
+
+@keyframes heroSlides {
+  0% {
+    background-image: url(../img/castle1920.jpg);
+  }
+
+  14.5% {
+    background-image: url(../img/castle1920.jpg);
+  }
+
+  18.5% {
+    background-image: url(../img/angels1920.jpg);
+  }
+
+  48% {
+    background-image: url(../img/angels1920.jpg);
+  }
+
+  52% {
+    background-image: url(../img/forest1920.jpg);
+  }
+
+  81.3% {
+    background-image: url(../img/forest1920.jpg);
+  }
+
+  85.3% {
+    background-image: url(../img/castle1920.jpg);
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero__container {
+    padding-left: 50px;
+  }
+
+  .hero {
+    margin-top: 0;
+    padding-top: 0;
+    background-image: url();
+  }
+
+  .hero__heading {
+    margin-bottom: -10px;
+  }
+
+  .hero__text {
+    width: 109.5%;
+    margin-top: 0;
+    margin-bottom: 132px;
+  }
+
+  .hero__bg {
+    padding: 132px 0 114px 0;
+    background-image: url(../img/castle1024.jpg);
+  }
+
+  @keyframes heroSlides {
+    0% {
+      background-image: url(../img/castle1024.jpg);
+    }
+
+    14.5% {
+      background-image: url(../img/castle1024.jpg);
+    }
+
+    18.5% {
+      background-image: url(../img/angels1024.jpg);
+    }
+
+    48% {
+      background-image: url(../img/angels1024.jpg);
+    }
+
+    52% {
+      background-image: url(../img/forest1024.jpg);
+    }
+
+    81.3% {
+      background-image: url(../img/forest1024.jpg);
+    }
+
+    85.3% {
+      background-image: url(../img/castle1024.jpg);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .hero__container {
+    padding-right: 57px;
+  }
+
+  .hero__bg {
+    padding: 104px 0 114px 0;
+    background-image: url(../img/castle768.jpg);
+  }
+
+  @keyframes heroSlides {
+    0% {
+      background-image: url(../img/castle768.jpg);
+    }
+
+    14.5% {
+      background-image: url(../img/castle768.jpg);
+    }
+
+    18.5% {
+      background-image: url(../img/angels768.jpg);
+    }
+
+    48% {
+      background-image: url(../img/angels768.jpg);
+    }
+
+    52% {
+      background-image: url(../img/forest768.jpg);
+    }
+
+    81.3% {
+      background-image: url(../img/forest768.jpg);
+    }
+
+    85.3% {
+      background-image: url(../img/castle768.jpg);
+    }
+  }
+}
+
+@media (max-width: 640px) {
+  .hero__heading {
+    font-size: calc(2rem + 40 * (100vw - 320px) / 1600);
+    line-height: 60px;
+  }
+
+  .hero__text {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 360px) {
+  .hero__container {
+    padding-right: 28px;
+    padding-left: 28px;
+  }
+
+  .hero__content {
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__heading {
+    margin-bottom: 2px;
+    max-width: 258px;
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .hero__text {
+    margin-bottom: 40px;
+    max-width: 265px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+  }
+
+  .hero__btn {
+    padding: 14px 16px 14px 19px;
+    width: 200px;
+    font-size: 12px;
+    line-height: 13px;
+  }
+
+  .hero__bg {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    background-image: url(../img/castle320.jpg);
+  }
+
+  @keyframes heroSlides {
+    0% {
+      background-image: url(../img/castle320.jpg);
+    }
+
+    14.5% {
+      background-image: url(../img/castle320.jpg);
+    }
+
+    18.5% {
+      background-image: url(../img/angels320.jpg);
+    }
+
+    48% {
+      background-image: url(../img/angels320.jpg);
+    }
+
+    52% {
+      background-image: url(../img/forest320.jpg);
+    }
+
+    81.3% {
+      background-image: url(../img/forest320.jpg);
+    }
+
+    85.3% {
+      background-image: url(../img/castle320.jpg);
+    }
+  }
+}

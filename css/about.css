@@ -1,0 +1,39 @@
+.about__container {
+  padding: 80px 160px 70px 160px ;
+}
+
+.about__descr {
+  max-width: 1080px;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .about__container {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__container {
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 360px) {
+  .about__container {
+    padding: 50px 15px 40px 15px;
+  }
+
+  .about__heading {
+    margin-bottom: 12px;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .about__descr {
+    font-size: 14px;
+    line-height: 28px;
+  }
+}
